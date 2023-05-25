@@ -1,0 +1,49 @@
+body{
+    font-size: "Sagoe UI";
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+h1,
+h2{
+    text-align: center;
+}
+
+/* Welcome text */
+h1::after{
+    content: "";
+    animation: textChange 6s linear;
+}
+
+@keyframes textChange{
+    0%{
+     content: "Welcome to";
+     color: rgb(18, 74, 226);
+    }
+    30%{
+        content: "CodeBustler";
+        color: orange;
+    }
+    50%{
+        content: "Its All About";
+    }
+    100%{
+        content: "Coding";
+        color: rgb(18, 74, 226);
+    }
+}
+
+/* web Text */
+h2{
+    animation: zoom 3s alternate-reverse;
+    animation-delay: 6s;
+    color: white;
+}
+
+@keyframes zoom{
+    0%{
+        scale: 1.5;
+        color: rgb(43, 42, 42);
+    }
+}
